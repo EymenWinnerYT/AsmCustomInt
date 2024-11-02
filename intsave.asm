@@ -2,8 +2,8 @@
 ;Created by EymenWinnerYT on 2 November 2024
 ;Compile: nasm -f bin intsave.asm -o intsave.com
 
-bits 16
-org 100h
+bits 16 ;16 bit rel mode
+org 100h ;100th memory adress
 
 mov ax,0x3569 ;DOS read interrupt cevtor table function
 int 21h
