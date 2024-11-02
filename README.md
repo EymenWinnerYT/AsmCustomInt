@@ -6,4 +6,6 @@ Interrupts are functions defined in Interrupt Vector Table, which is table of in
 
 ### Output:
 ![image info](Capture.PNG)
+
+
 ![image info](Capture2.PNG)
