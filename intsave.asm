@@ -64,11 +64,11 @@ int_prog:
 	mov es,ax
 	xor di,di
 	
-	mov al,10 ;Lime color
+	mov al,10 ;Lime color, you can change it with your own (make sure color number is bettween 0 and 255)
 	
 	;How many pixels
 	mov cx,64000
-	rep stosb
+	rep stosb ;Repeat STOSB instruction for 64000 times (STOSB: http://yassinebridi.github.io/asm-docs/8086_instruction_set.html#STOSB)
 	
 	;Print text
 	mov ah,09h
@@ -85,7 +85,8 @@ int_prog:
 	
 	popa ;Restore data of all registers in memory
 	iret ;Return from interrupt program
-	
+
+;DW stand for define word
 old_int_off dw 0
 old_int_seg dw 0
 
