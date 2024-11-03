@@ -52,6 +52,7 @@ mov ax, 4c00h
 int 21h
 
 ;Our interrupt program
+;Our interrupt fill scrren with green color and print text :-)
 int_prog:
 	pusha ;Store data of all registers in memory
 	
