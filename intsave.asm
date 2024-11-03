@@ -92,4 +92,4 @@ old_int_off dw 0
 old_int_seg dw 0
 
 successMsg db "INT 31h hooked$"
-triggerMsg db "INT 31h triggered",13,10,"Press any key to exit$"
+triggerMsg db "INT 31h triggered",13,10,"Created by EymenWinnerYT",13,10,"Press any key to exit$"
