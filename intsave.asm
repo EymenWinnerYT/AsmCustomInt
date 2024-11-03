@@ -81,8 +81,8 @@ int_prog:
 	int 16h
 	
 	;Chance to text mode again
-	mov ax,3
-	int 10
+	mov ax,03h
+	int 10h
 	
 	popa ;Restore data of all registers in memory
 	iret ;Return from interrupt program
