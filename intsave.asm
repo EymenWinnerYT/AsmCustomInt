@@ -13,10 +13,10 @@ mov [old_int_seg],bx ;Move old table segment to old_int_seg variable
 
 mov ax,cs
 mov ds,ax
-mov ah,0x25
+mov ah,0x25 ;DOS set interrupt function
 mov al,0x31 ;Number of out interrupt (31)
 mov dx,int_prog	;Program of our interrupt
-int 21h
+int 21h ;Hook the interrupt using dos interrupt
 
 ;Clear screen
 mov ah,06h ;BIOS clear screen function
@@ -35,7 +35,7 @@ mov dl,0
 int 10h
 
 ;Print "INT 31h hooked"
-mov ah,09h
+mov ah,09h ;DOS print text function
 mov dx,successMsg
 int 21h
 
